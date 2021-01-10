@@ -41,12 +41,12 @@ body .title h1 {
 }
 .container div:nth-child(2) {
   left: 8vh;
-  top: -20vh;
+  top: -1vh;
   transition: all 0.5s linear;
 }
 .container div:nth-child(3) {
   left: -36vh;
-  top: -40vh;
+  top: -2vh;
   transition: all 0.5s linear;
 }
 
@@ -64,12 +64,12 @@ body .title h1 {
 .container:hover div:nth-child(1),
 .container:hover div:nth-child(2),
 .container:hover div:nth-child(3) {
-  animation-name: animation1;
+  /* animation-name: animation1; */
   left: initial;
   top: initial;
   transition: all 1s linear;
 }
-@keyframes aninmation1 {
+/* @keyframes aninmation1 {
   0% {
     left: 52vh;
     top: 0;
@@ -82,7 +82,7 @@ body .title h1 {
   }
   100% {
   }
-}
+} */
 .container div h2,
 .container div p {
   /* opacity: 0; */
