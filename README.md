@@ -10,6 +10,7 @@ Seguindo varios desafios já existentes para testar minhas abilidades e conhecim
 
 **Desafio 2:**
 > Loading Wheel
+
 ![](Chalenge_2/def.gif)
 
 
