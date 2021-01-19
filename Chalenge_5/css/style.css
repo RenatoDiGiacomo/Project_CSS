@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+body .title {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px dashed #717171;
+}
+body .title h1 {
+  font-size: 52px;
+  color: #797979;
+  text-transform: uppercase;
+}
+/*Boxes*/
