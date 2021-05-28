@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+body {
+  font-family: Roboto, sans-serif;
+  background: linear-gradient(rgb(255, 255, 255), rgb(158, 158, 158)) no-repeat;
+  height: 5000px;
+}
+body .title {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px dashed #717171;
+}
+body .title h1 {
+  font-size: 52px;
+  color: #797979;
+  text-transform: uppercase;
+}
+/*Boxes*/
+.container {
+  display: flex;
+  margin: 1em 5em;
+}
+.container span {
+  font-size: 24px;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  display: block;
+  margin: 5em auto 0;
+  border-radius: 50%;
+  animation-name: ring;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  box-shadow: 6px -6px 6px 0px black;
+}
+@keyframes ring {
+  0% {
+    box-shadow: 6px -6px 6px 0px black;
+  }
+  25% {
+    box-shadow: -6px -6px 6px 0px black;
+  }
+  50% {
+    box-shadow: 0px 6px 6px 0px black;
+  }
+  75% {
+    box-shadow:  6px 6px 6px 0px black;
+  }
+  100% {
+    box-shadow:  6px -6px 6px 0px black;
+  }
+}

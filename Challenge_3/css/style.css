@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+body .title {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px dashed #717171;
+}
+body .title h1 {
+  font-size: 52px;
+  color: #797979;
+  text-transform: uppercase;
+}
+/*Boxes*/
+
+section {
+  padding-top: 5em;
+  height: 500px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+section a {
+  text-decoration: none;
+  color: #b803b8;
+  text-transform: uppercase;
+  width: 10em;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  position: relative;
+  border: 5px solid #b803b8;
+}
+
+section a::after {
+  position: absolute;
+  content: " ";
+  box-sizing: border-box;
+  transform: skewX(50deg);
+  width: 20px;
+  bottom: -6px;
+  left: 20px;
+  border: 3px solid #000;
+  height: 2px;
+  transition: all 0.5s linear;
+}
+section a::before {
+  position: absolute;
+  content: " ";
+  box-sizing: border-box;
+  transform: skewX(50deg);
+  width: 20px;
+  top: -6px;
+  right: 20px;
+  border: 3px solid #000;
+  height: 2px;
+  transition: all 0.5s linear;
+}
+section a:hover::before {
+  right: 120px;
+  transition: all 0.5s linear;
+}
+section a:hover::after {
+  left: 120px;
+  transition: all 0.5s linear;
+}
